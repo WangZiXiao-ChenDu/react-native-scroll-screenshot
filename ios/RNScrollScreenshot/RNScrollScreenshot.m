@@ -6,14 +6,14 @@
 //  Copyright © 2016年 WangZiXiao. All rights reserved.
 //
 
-#import "ScrollingScreenshot.h"
+#import "RNScrollScreenshot.h"
 #import "RCTConvert.h"
 #import "RCTBridge.h"
 #import "RCTView.h"
 #import "RCTUIManager.h"
 #import  <QuartzCore/QuartzCore.h>
 
-@implementation ScrollingScreenshot
+@implementation RNScrollScreenshot
 
 RCT_EXPORT_MODULE()
 
