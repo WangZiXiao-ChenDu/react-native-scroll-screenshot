@@ -1,0 +1,24 @@
+{
+  "name": "react-native-scroll-screenshot",
+  "version": "0.1.0",
+  "description": "scrolling-screenshot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WangZiXiao-ChenDu/react-native-scroll-screenshot.git"
+  },
+  "keywords": [
+    "scroll",
+    "screenshot",
+    "react-native"
+  ],
+  "author": "WangZiXiao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WangZiXiao-ChenDu/react-native-scroll-screenshot/issues"
+  },
+  "homepage": "https://github.com/WangZiXiao-ChenDu/react-native-scroll-screenshot#readme"
+}
