@@ -1,7 +1,7 @@
 {
   "name": "react-native-scroll-screenshot",
-  "version": "0.1.0",
-  "description": "scrolling-screenshot",
+  "version": "0.1.2",
+  "description": "长截图",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,7 @@
   "keywords": [
     "scroll",
     "screenshot",
-    "react-native"
+    "scroll-screenshot"
   ],
   "author": "WangZiXiao",
   "license": "ISC",
