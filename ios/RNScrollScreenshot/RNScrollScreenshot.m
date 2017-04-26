@@ -103,8 +103,9 @@ RCTResponseSenderBlock _callback;
 - (void) saveImage:(UIImage *)imageToSave {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *basePath =  [paths objectAtIndex:0];
+    NSString *currentTime = [self getCurrentTime];
     
-    NSString *filePath = [basePath stringByAppendingString:@"/scrollingShot.jpg"];
+    NSString *filePath = [basePath stringByAppendingString:[NSString stringWithFormat:@"/%@.jpg", currentTime]];
     NSError *error;
     
     NSData *data = UIImageJPEGRepresentation(imageToSave, 0.5);
@@ -155,6 +156,16 @@ RCT_EXPORT_METHOD(takeScreenshot:(nonnull NSNumber *)reactTag
     } else {
         [self screenshotCurrent:view];
     }
+}
+
+-(NSString*)getCurrentTime {
+    
+    NSDateFormatter*formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"yyyMMddHHmmss"];
+    
+    NSString*dateTime = [formatter stringFromDate:[NSDate date]];
+    
+    return dateTime;
 }
 
 @end
