@@ -1,6 +1,6 @@
 {
   "name": "react-native-scroll-screenshot",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "长截图",
   "main": "index.js",
   "scripts": {

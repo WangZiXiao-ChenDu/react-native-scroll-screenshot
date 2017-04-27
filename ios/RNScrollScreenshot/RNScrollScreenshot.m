@@ -104,8 +104,9 @@ RCTResponseSenderBlock _callback;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *basePath =  [paths objectAtIndex:0];
     NSString *currentTime = [self getCurrentTime];
+    int rendom = arc4random() % 100;
     
-    NSString *filePath = [basePath stringByAppendingString:[NSString stringWithFormat:@"/%@.jpg", currentTime]];
+    NSString *filePath = [basePath stringByAppendingString:[NSString stringWithFormat:@"/%@%d.jpg", currentTime,rendom]];
     NSError *error;
     
     NSData *data = UIImageJPEGRepresentation(imageToSave, 0.5);
