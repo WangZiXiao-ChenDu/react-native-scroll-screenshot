@@ -7,11 +7,30 @@
 //
 
 #import "RNScrollScreenshot.h"
-#import "RCTConvert.h"
-#import "RCTBridge.h"
-#import "RCTView.h"
-#import "RCTUIManager.h"
 #import  <QuartzCore/QuartzCore.h>
+#if __has_include(<React/RCTConvert.h>)
+#import <React/RCTConvert.h>
+#else
+#import "RCTConvert.h"
+#endif
+
+#if __has_include(<React/RCTBridge.h>)
+#import <React/RCTBridge.h>
+#else
+#import "RCTBridge.h"
+#endif
+
+#if __has_include(<React/RCTView.h>)
+#import <React/RCTView.h>
+#else
+#import "RCTView.h"
+#endif
+
+#if __has_include(<React/RCTUIManager.h>)
+#import <React/RCTUIManager.h>
+#else
+#import "RCTUIManager.h"
+#endif
 
 @implementation RNScrollScreenshot
 
