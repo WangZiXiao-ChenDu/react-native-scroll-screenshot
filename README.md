@@ -2,7 +2,7 @@
 Installation can be done through ``npm``:
 
 ```shell
-npm i react-native-uuid-keychain --save
+npm i react-native-scroll-screenshot --save
 ```
 
 ## Usage
